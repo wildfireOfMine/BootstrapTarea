@@ -33,11 +33,3 @@ toggleButton.addEventListener("click", e=>{
     sidenavAccordion.classList.toggle("sb-sidenav-light");
     
 })
-
-const bloquear = document.querySelector("#bloquear");
-const aviso = document.querySelector("#aviso");
-bloquear.addEventListener("click", e=>{
-    aviso.classList.toggle("avisoActivado");
-})
-
-console.log(bloquear);

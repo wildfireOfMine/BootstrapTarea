@@ -11254,6 +11254,6 @@ body {
   display: none;
 }
 
-#avisoActivado {
-  display: relative;
+.avisoActivado {
+  display: block;
 }
