@@ -2527,6 +2527,12 @@ textarea.form-control-lg {
   z-index: 5;
 }
 
+.input-group > button:nth-child(1) {
+  margin: 0 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
 .input-group-text {
   display: flex;
   align-items: center;

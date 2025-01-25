@@ -24,3 +24,12 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+const toggleButton = document.querySelector("#toggleButton");
+const sidenavAccordion = document.querySelector("#sidenavAccordion");
+
+toggleButton.addEventListener("click", e=>{
+    e.preventDefault();
+    sidenavAccordion.classList.toggle("sb-sidenav-light");
+    
+})
