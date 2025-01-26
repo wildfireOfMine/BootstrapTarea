@@ -11250,10 +11250,34 @@ body {
 
 /* Listado de Publicaciones */
 
-#aviso {
+.aviso {
   display: none;
 }
 
 .avisoActivado {
   display: block;
+  position: fixed;
+  top: 0;
+  left: 80;
+  z-index: 999;
+  background-color: var(--bs-orange);
+  border: 5px var(--bs-red) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 900px;
+}
+
+.avisoActivado > svg {
+  font-size: 50px;
+}
+
+.avisoActivado > nav {
+  display: flex;
+}
+
+.avisoActivado > nav > button {
+  margin: 5px;
 }

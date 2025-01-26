@@ -33,3 +33,33 @@ toggleButton.addEventListener("click", e=>{
     sidenavAccordion.classList.toggle("sb-sidenav-light");
     
 })
+
+const botonesBloquear = document.querySelectorAll(".btn-danger");
+const botonesDesbloquear = document.querySelectorAll(".btn-warning");
+const aviso = document.querySelector(".aviso");
+const confirmacionNegacion = document.querySelectorAll(".btn-secondary");
+console.log(aviso);
+console.log(botonesBloquear);
+
+Array.from(botonesBloquear).forEach(e => {
+    e.addEventListener("click", bloquear);
+});
+
+Array.from(botonesDesbloquear).forEach(e => {
+    e.addEventListener("click", bloquear);
+});
+
+Array.from(confirmacionNegacion).forEach(e => {
+    e.addEventListener("click", bloquear);
+});
+
+function bloquear(e){
+    console.log(e);
+    e.preventDefault();
+    aviso.classList.toggle("avisoActivado");
+}
+/* bloquear.addEventListener("click", e=>{
+    e.preventDefault();
+    aviso.classList.toggle("avisoActivado");
+})
+ */

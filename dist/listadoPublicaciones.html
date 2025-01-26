@@ -122,7 +122,7 @@
                             <li class="breadcrumb-item active">Lista de Publicaciones</li>
                         </ol>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+                            <table>
                                 <thead>
                                     <tr>
                                         <th>Nombre</th>
@@ -131,23 +131,15 @@
                                         <th>Opciones</th>
                                     </tr>
                                 </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Temas</th>
-                                        <th>Fecha</th>
-                                        <th>Opciones</th>
-                                    </tr>
-                                </tfoot>
                                 <tbody>
                                     <tr>
                                         <td>Formato de Imágenes</td>
                                         <td>PNG, JPG, AVIF, etc.</td>
                                         <td>30/12/2020</td>
                                         <td>
-                                            <a href="bloquear.html"><button type="button" class="btn btn-danger">Bloquear</button></a> - 
-                                            <a href="desbloquear.html"><button type="button" class="btn btn-warning">Desbloquear</button></a> - 
-                                            <a href="formatoImagen.html"><button type="button" class="btn btn-info">Visualizar</button></a>
+                                            <button id="bloquear"  type="button" class="btn btn-danger">Bloquear</button>- 
+                                            <button type="button" class="btn btn-warning">Desbloquear</button></a> - 
+                                            <a href="formatoImagen.html" target="_blank"><button type="button" class="btn btn-info">Visualizar</button></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -155,9 +147,9 @@
                                         <td>Background, Object</td>
                                         <td>12/1/2010</td>
                                         <td>
-                                            <a href="bloquear.html"><button type="button" class="btn btn-danger">Bloquear</button></a> - 
-                                            <a href="desbloquear.html"><button type="button" class="btn btn-warning">Desbloquear</button></a> - 
-                                            <a href="propiedadesCSS.html"><button type="button" class="btn btn-info">Visualizar</button></a>
+                                            <button type="button" class="btn btn-danger">Bloquear</button> - 
+                                            <button type="button" class="btn btn-warning">Desbloquear</button> - 
+                                            <a href="propiedadesCSS.html" target="_blank"><button type="button" class="btn btn-info">Visualizar</button></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -165,20 +157,25 @@
                                         <td>Filtros de aplicaciones para edición de imágenes</td>
                                         <td>1/9/2000</td>
                                         <td>
-                                            <a href="bloquear.html"><button type="button" class="btn btn-danger">Bloquear</button></a> - 
-                                            <a href="desbloquear.html"><button type="button" class="btn btn-warning">Desbloquear</button></a> - 
-                                            <a href="filtrosCSS.html"><button type="button" class="btn btn-info">Visualizar</button></a>
+                                            <button type="button" class="btn btn-danger">Bloquear</button> - 
+                                            <button type="button" class="btn btn-warning">Desbloquear</button> - 
+                                            <a href="filtrosCSS.html" target="_blank"><button type="button" class="btn btn-info">Visualizar</button></a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
-                    <div id="aviso">
-                        <h2>¿Seguro que quieres bloquearlo?</h2>
+                    <section class="aviso">
+                        <h1>¿Seguro que quieres hacer eso?</h1>
                         <i class="fas fa-warning"></i>
                         <q>Toda acción tiene su consecuencia</q>
-                    </div>
+                        <nav>
+                            <button type="button" class="btn btn-secondary">Sí</button>
+                            <button type="button" class="btn btn-secondary">No</button>
+                        </nav>
+                    </section>
                 </main>
             </div>
 
