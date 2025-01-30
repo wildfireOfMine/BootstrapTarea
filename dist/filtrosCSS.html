@@ -14,6 +14,16 @@
     <title>Filtros de CSS - Bootstrap Tarea</title>
 </head>
 <body class="sb-nav-fixed">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Estás viendo desde la página desde la perspectiva de un usuario común</a>
+            </li>
+        </ul>
+    </header>
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
@@ -24,22 +34,54 @@
                         <li class="breadcrumb-item active"><a href="listadoPublicaciones.html">Lista de Publicaciones</a></li>
                         <li class="breadcrumb-item active">Filtros de CSS</li>
                     </ol>
-                    <pre>
-Los filtros en CSS son otra medida para aplicar efectos de imagen propios de aplicaciones de retoque fotográfico, como PhotoShop o Pixlr. En CSS existe la siguiente seleccción:
--Grayscale: Una escala de blanco y negro
--Blur: Un desenfoque
--Sepia: Graduación del color sepia
--Saturate: Graduación de la saturación
--Opacity: Graduación de la transparencia
--Brightness: Modificación del brillo
--Contrast: Producción de contraste
--Hue-Rotate: Rotación del color
--Invert: Se invierten los colores
--Drop-shadow: Produce una sombra alrededor de la imagen
-                    </pre>
-                    <a href="listadoPublicaciones.html"><button type="button" class="btn btn-primary">Volver Atrás</button></a>
+                    <div>
+                        <p>Los filtros en CSS son otra medida para aplicar efectos de imagen propios de 
+                            aplicaciones de retoque fotográfico, como PhotoShop o Pixlr. En CSS existe la siguiente seleccción:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><div><span class="firstCaps">G</span>rayscale: Una escala de blanco y negro</div>
+                            <img src="imgs/modelo.jpg" alt="Grayscale">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">B</span>lur: Un desenfoque</div>
+                            <img src="imgs/modelo.jpg" alt="Blur">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">S</span>epia: Graduación del color sepia</div>
+                            <img src="imgs/modelo.jpg" alt="Sepia">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">S</span>aturate: Graduación de la saturación</div>
+                            <img src="imgs/modelo.jpg" alt="Saturate">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">O</span>pacity: Graduación de la transparencia</div>
+                            <img src="imgs/modelo.jpg" alt="Opacity">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">B</span>rightness: Modificación del brillo</div>
+                            <img src="imgs/modelo.jpg" alt="Brightness">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">C</span>ontrast: Producción de contraste</div>
+                            <img src="imgs/modelo.jpg" alt="Contrast">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">H</span>ue-Rotate: Rotación del color</div>
+                            <img src="imgs/modelo.jpg" alt="Hue-rotate">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">I</span>nvert: Se invierten los colores</div>
+                            <img src="imgs/modelo.jpg" alt="Invert">
+                        </li>
+                        <li class="list-group-item"><div><span class="firstCaps">D</span>rop-shadow: Produce una sombra alrededor de la imagen</div>
+                            <img src="imgs/modelo.jpg" alt="Drop-shadow">
+                        </li>
+                    </ul>
+                    <a href="https://www.freepik.es/foto-gratis/espigon-punta-umbria_15036401.htm#fromView=keyword&page=1&position=0&uuid=56e10809-7122-4b00-a21d-6528970063c2&query=Mar"
+                        target="_blank">
+                        Fuente de la imagen utilizada</a>
+                    </div>
+                    <a href="listadoPublicaciones.html"><button type="button" class="btn btn-primary" style="margin: 5px 0">Volver Atrás</button></a>
                 </div>
             </main>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <p class="text-center text-body-secondary">&copy; Tarea Bootstrap | <a href="#">Términos de Servicio</a> y <a href="#">Políticas</a></p>
+            </footer>
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
