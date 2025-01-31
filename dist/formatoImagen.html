@@ -14,166 +14,108 @@
     <title>Formatos de las Imágenes - Bootstrap Tarea</title>
 </head>
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Tarea Bootstrap</a>
-        <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <button id="toggleButton" type="button" class="btn btn-light">Luz/Oscuridad</button>
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-        <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Configuración</a></li>
-                    <li><a class="dropdown-item" href="#!">Actividades</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#!">Cerrar Sesión</a></li>
-                </ul>
+    <header class="d-flex justify-content-center py-3" id="cabecera">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Estás viendo la página desde la perspectiva de un usuario común</a>
             </li>
         </ul>
-    </nav>
-    <div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                <div class="sb-sidenav-menu">
-                    <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Dashboard
-                        </a>
-                        <div class="sb-sidenav-menu-heading">Interface</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Layouts
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                            Pages
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                    Authentication
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="login.html">Login</a>
-                                        <a class="nav-link" href="formulario.html">Register</a>
-                                        <a class="nav-link" href="password.html">Forgot Password</a>
-                                    </nav>
-                                </div>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                    Error
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="401.html">401 Page</a>
-                                        <a class="nav-link" href="404.html">404 Page</a>
-                                        <a class="nav-link" href="500.html">500 Page</a>
-                                    </nav>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="sb-sidenav-menu-heading">Addons</div>
-                        <a class="nav-link" href="charts.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts
-                        </a>
-                        <a class="nav-link" href="usuarios.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                            Usuarios
-                        </a>
-                        <a class="nav-link" href="listadoPublicaciones.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Publicaciones
-                        </a>
-                    </div>
-                </div>
-                <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
-                    Start Bootstrap
-                </div>
-            </nav>
-        </div>
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid px-4">
-                    <h1 class="mt-4">Formatos de las Imágenes</h1>
-                    <pre>
--Jpg
+    </header>
+    <div id="layoutSidenav_content">
+        <main>
+           <div class="container-fluid px-4">
+                <h1 class="mt-4">Formatos de las Imágenes</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="usuarios.html">Usuarios</a></li>
+                    <li class="breadcrumb-item active"><a href="listadoPublicaciones.html">Lista de Publicaciones</a></li>
+                    <li class="breadcrumb-item active">Formatos de las Imágenes</li>
+                </ol>
+                <ul class="list-group" id="formatoImagenLista">
+                    <li class="list-group-item">
+                        <div><span class="firstCaps">J</span>PG, del inglés, Joint Photographic Experts Group, es un tipo de formato de imagen. Sirve para guardar y compartir imágenes
+                        en un formato comprimido sin una pérdida de calidad ni una pérdida de velocidad, a diferencia de las imágenes en formato crudo 
+                        (del inglés, RAW). Nació en los noventas como medida para crear un formato de imagen para fotografías.<br>
+                        Enumerando sus características más importantes:
+                        <ul>
+                            <li>Elimina los píxeles innecesarios. Reduciendo así el tamaño de la imagen.</li>
+                            <li>El formato perfecto para imágenes fotográficas y fotorrealistas.</li>
+                        </ul></div>
+                        <a href="hhttps://www.freepik.es/imagen-ia-gratis/colibri-colores-vividos-naturaleza_186503791.htm#fromView=keyword&page=1&position=1&uuid=6e5261ab-ed8d-468a-b4f7-2e2f210fae51&query=Jpg" 
+                        target="_blank"><img src="imgs/JPG.jpg" alt="Imagen en JPG. Fuente al darle."></a>
+                    </li>
 
-JPG, del inglés, Joint Photographic Experts Group, es un tipo de formato de imagen. Sirve para guardar y compartir imágenes
-en un formato comprimido sin una pérdida de calidad ni una pérdida de velocidad, a diferencia de las imágenes en formato crudo 
-(del inglés, RAW). Nació en los noventas como medida para crear un formato de imagen para fotografías.
-Enumerando sus características más importantes:
--Elimina los píxeles innecesarios. Reduciendo así el tamaño de la imagen.
--El formato perfecto para imágenes fotográficas y fotorrealistas.
 
--Jpeg
+                    <li class="list-group-item">
+                    <a href="https://www.freepik.es/imagen-ia-gratis/ojos-brillaron-colores-vibrantes-hojas-otono-ia-generativa_42547386.htm#fromView=search&page=1&position=2&uuid=cee8cde6-acc8-4844-9ec8-7fec3b2dfb18&query=Jpeg"
+                    target="_blank">
+                        <img src="imgs/JPEG.jpeg" alt="Imagen en JPEG. Fuente al darle."></a>
+                    <div><span class="firstCaps">L</span>o mismo que JPG. El punto es que en los sistemas 
+                    operativos con Windows, sólo se permiten las nomenclaturas con 
+                    tres letras, sin embargo, su significado es el mismo.
+                    Sus características, así pues, son las mismas.</div>
+                    </li>
 
-Lo mismo que JPG. El punto es que en los sistemas operativos con Windows, sólo se permiten las nomenclaturas con 
-tres letras, sin embargo, su significado es el mismo.
-Sus características, así pues, son las mismas.
+                    <li class="list-group-item"><div><span class="firstCaps">P</span>NG, del inglés, Portable Network Graphics, es 
+                        otro tipo de formato de imagen, caracterizado principalmente por 
+                    la posibilidad de tener fondos transparentes o semitransparentes. Habiendo sido publicado en 1995 por Oliver Frommme, 
+                    es una evolución natural de los archivos tipo GIF, que ya llevaba ocho años publicado cuando salieron los PNG.<br> 
+                    Enumerando sus características más importantes:
+                    <ul>
+                        <li>Tiene un nivel de popularidad muy alto entre las personas que se dedican al diseño web.</li>
+                        <li>Admite dieciséis millones de colores.</li>
+                        <li>Originalmente se iba a llamar "PING".</li>
+                    </ul></div>
+                    <a href="https://pixabay.com/es/photos/fruta-clementina-png-naranja-1222438/"
+                    target="_blank">
+                    <img src="imgs/PNG.png" alt="Imagen en PNG. Fuente al darle."></a>
+                    </li>
 
--Png
+                    <li class="list-group-item">
+                    <a href="https://www.gettyimages.es/fotos/dinosaurio" target="_blank"><img src="imgs/WEBP.webp" alt="Imagen en WEBP. Fuente al darle."></a>
+                    <div><span class="firstCaps">W</span>ebp es un nuevo formato relativamente hablando, 
+                    siendo desarrollado por Google y que busca elevarse hacia 
+                    ser el estándar de las páginas web. Como mayor característica, utiliza métodos de comprensión de imágenes 
+                    con y sin pérdidas para reducir el tamaño de la imagen, manteniendo una buena calidad.
+                    Enumerando otras características:
+                    -Aumenta el rendimiento del sitio web, además de optimizar los motores de búsqueda.
+                    -Ahorra ancho de banda, a la vez que muestra imágenes de alta calidad.</div>
+                    </li>
 
-PNG, del inglés, Portable Network Graphics, es otro tipo de formato de imagen, caracterizado principalmente por 
-la posibilidad de tener fondos transparentes o semitransparentes. Habiendo sido publicado en 1995 por Oliver Frommme, 
-es una evolución natural de los archivos tipo GIF, que ya llevaba ocho años publicado cuando salieron los PNG. 
-Enumerando sus características más importantes:
--Tiene un nivel de popularidad muy alto entre las personas que se dedican al diseño web. 
--Admite dieciséis millones de colores.
--Originalmente se iba a llamar "PING".
+                    <li class="list-group-item"><div><span class="firstCaps">A</span>VIF es un nuevo formato de imágenes desarrollado en 2021 
+                        incorporado en Android 12, con un nuevo intento 
+                    de Google en poder reemplazar a los tan famosos archivos JPG. Del inglés, "AV1 Image File Format", tiene las siguientes características:
+                    -Ofrece la misma calidad de imagen en un tamaño mucho más reducido (una misma imagen comprimida en AVIF 
+                    ocupa un tercio que si se comprime en JPG) .
+                    -Permite almacenar en su interior tanto imágenes estáticas como animaciones.</div>
+                    <a href="https://aomedia.org/blog%20posts/avif-meet-the-next-level-image-file-format/"
+                    target="_blank"><img src="imgs/AVIF.avif" alt="Imagen en AVIF. Fuente al darle."></a></li>
 
--Webp
-
-Webp es un nuevo formato relativamente hablando, siendo desarrollado por Google y que busca elevarse hacia 
-ser el estándar de las páginas web. Como mayor característica, utiliza métodos de comprensión de imágenes 
-con y sin pérdidas para reducir el tamaño de la imagen, manteniendo una buena calidad.
-Enumerando otras características:
--Aumenta el rendimiento del sitio web, además de optimizar los motores de búsqueda.
--Ahorra ancho de banda, a la vez que muestra imágenes de alta calidad.
-
--Avif
-
-AVIF es un nuevo formato de imágenes desarrollado en 2021 incorporado en Android 12, con un nuevo intento 
-de Google en poder reemplazar a los tan famosos archivos JPG. Del inglés, "AV1 Image File Format", tiene las siguientes características:
--Ofrece la misma calidad de imagen en un tamaño mucho más reducido (una misma imagen comprimida en AVIF 
-ocupa un tercio que si se comprime en JPG) .
--Permite almacenar en su interior tanto imágenes estáticas como animaciones.
-
--Svg
-
-SVG, del inglés, "Scalable Vector Graphics", es un formato que, a comparación de los anteriores formatos, 
-no está muy utilizado, pero es útil por su uso en línea, flexbilidad, capacidad de ofrecer gráficos con calidad, y sus inspiraciones en XML.
-Enumerando otras características:
--La posibilidad de utilizar tipografías.
--Iconos responsivos.
--Recomendado por W3C.
-                    </pre>
-                </div>
-            </main>
-        </div>
-
+                    <li class="list-group-item">
+                    <a href="https://www.svgrepo.com/svg/530661/genetic-data"
+                    target="_blank"><img src="imgs/SVG.svg" alt="Imagen en SVG. Fuente al darle."></a>
+                    <div><span class="firstCaps">S</span>VG, del inglés, "Scalable Vector Graphics", 
+                    es un formato que, a comparación de los anteriores formatos, 
+                    no está muy utilizado, pero es útil por su uso en línea, flexbilidad, capacidad de ofrecer gráficos con calidad, y sus inspiraciones en XML.
+                    Enumerando otras características:
+                    -La posibilidad de utilizar tipografías.
+                    -Iconos responsivos.
+                    -Recomendado por W3C.</div></li>
+                </ul>
+                <a href="listadoPublicaciones.html"><button type="button" class="btn btn-primary" style="margin: 5px 0">Volver Atrás</button></a>
+            </div>
+        </main>
+    </div>
+    <div class="b-example-divider"></div>
+    <hr>
+    <div class="container" id="footer">
+        <footer class="py-3 my-4">
+            <p class="text-center text-body-secondary">&copy; Tarea Bootstrap | <a href="#">Términos de Servicio</a> y <a href="#">Políticas</a></p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>

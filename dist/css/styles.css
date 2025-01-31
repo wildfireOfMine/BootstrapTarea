@@ -11284,13 +11284,13 @@ body {
 
 /* Publicaciones */
 
-.list-group > .list-group-item {
+#listaFiltros > .list-group-item {
   font-size: 3em;
   display: flex;
   flex-direction: column;
 }
 
-.list-group > .list-group-item > div {
+#listaFiltros > .list-group-item > div {
   display: flex;
   flex-direction: row;
 }
@@ -11300,47 +11300,78 @@ body {
   height: 25%;
 }
 
-.list-group > .list-group-item:nth-child(1) > img{
+#listaFiltros > .list-group-item:nth-child(1) > img{
   filter: grayscale(1);
 }
 
-.list-group > .list-group-item:nth-child(2) > img{
+#listaFiltros > .list-group-item:nth-child(2) > img{
   filter: blur(10px);
 }
 
-.list-group > .list-group-item:nth-child(3) > img{
+#listaFiltros > .list-group-item:nth-child(3) > img{
   filter: sepia(1);
 }
 
-.list-group > .list-group-item:nth-child(4) > img{
+#listaFiltros > .list-group-item:nth-child(4) > img{
   filter: saturate(6);
 }
 
-.list-group > .list-group-item:nth-child(5) > img{
+#listaFiltros > .list-group-item:nth-child(5) > img{
   filter: opacity(0.2);
 }
 
-.list-group > .list-group-item:nth-child(6) > img{
+#listaFiltros > .list-group-item:nth-child(6) > img{
   filter: brightness(3);
 }
 
-.list-group > .list-group-item:nth-child(7) > img{
+#listaFiltros > .list-group-item:nth-child(7) > img{
   filter: contrast(1.9);
 }
 
-.list-group > .list-group-item:nth-child(8) > img{
+#listaFiltros > .list-group-item:nth-child(8) > img{
   filter: hue-rotate(90deg);
 }
 
-.list-group > .list-group-item:nth-child(9) > img{
+#listaFiltros > .list-group-item:nth-child(9) > img{
   filter: invert(1);
 }
 
-.list-group > .list-group-item:nth-child(10) > img{
+#listaFiltros > .list-group-item:nth-child(10) > img{
   margin: 40px 0;
   filter: drop-shadow(10px -10px 1px #4444dd);
 }
 
 .firstCaps{
   font-weight: bold;
+}
+
+/* Cabeceras y Pies de las Publicaciones */
+
+#cabecera {
+  background-color: #000;
+}
+
+#footer > footer {
+  padding-top: 0 !important;
+}
+
+/* Formatos de Imagen */
+
+#formatoImagenLista > .list-group-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6em;
+  justify-content: center;
+}
+
+#formatoImagenLista > .list-group-item > a > img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  max-width: 500px;
+}
+
+#formatoImagenLista > .list-group-item > div {
+  flex: 1;
 }
