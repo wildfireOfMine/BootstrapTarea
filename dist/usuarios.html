@@ -138,7 +138,7 @@
                                 DataTable Example
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple">
+                                <table class="table">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -147,6 +147,7 @@
                                             <th>Age</th>
                                             <th>Start date</th>
                                             <th>Salary</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -157,9 +158,10 @@
                                             <th>Age</th>
                                             <th>Start date</th>
                                             <th>Salary</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </tfoot>
-                                    <tbody>
+                                    <tbody id="cuerpoTabla">
                                         <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>
@@ -622,6 +624,15 @@
                         </div>
                     </div>
                 </main>
+                <section class="aviso">
+                    <h1>¿Seguro que quieres hacer eso?</h1>
+                    <i class="fas fa-warning"></i>
+                    <q>Toda acción tiene su consecuencia</q>
+                    <nav>
+                        <button type="button" class="btn btn-secondary">Sí</button>
+                        <button type="button" class="btn btn-secondary">No</button>
+                    </nav>
+                </section>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
