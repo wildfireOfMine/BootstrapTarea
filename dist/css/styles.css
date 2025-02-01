@@ -11390,7 +11390,7 @@ body {
 #propiedadesCSS > .list-group > .list-group-item {
   display: flex;
   flex-direction: column;
-  font-size: 2.6em;
+  font-size: 2.2em;
 }
 
 #propiedadesCSS > .list-group > .list-group-item > a > img {
