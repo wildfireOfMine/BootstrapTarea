@@ -11267,7 +11267,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 900px;
+  height: 100vh;
 }
 
 .avisoActivado > svg {
