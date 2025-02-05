@@ -38,6 +38,7 @@ toggleButton.addEventListener("click", e=>{
 let validador = 0;
 const tabla = document.querySelectorAll("#cuerpoTabla > tr");
 Array.from(tabla).forEach((element) => {
+    if (validador != 0) {
         /* Botón de Bloqueo */
         const nuevoTd = document.createElement("td");
         const botonBloquear = document.createElement("button");
@@ -68,9 +69,26 @@ Array.from(tabla).forEach((element) => {
         botonBorrar.style.margin = "0 5px";
 
         nuevoTd.appendChild(botonBorrar);
-        element.appendChild(nuevoTd2);
-/*         <button type="button" class="btn btn-danger">Bloquear</button> - 
-        <button type="button" class="btn btn-warning">Desbloquear</button> -  */
+        element.appendChild(nuevoTd3);
+
+        /* Ver publicaciones */
+
+        const nuevoTd4 = document.createElement("td");
+        const botonPublicaciones = document.createElement("button");
+        botonPublicaciones.classList.add("btn", "btn-success");
+        botonPublicaciones.innerText = "Ver publicaciones";
+        botonPublicaciones.style.margin = "0 5px";
+
+        enlace = document.createElement("a");
+        enlace.href = "listadoPublicacionesError.html";
+        enlace.target = "_blank";
+        enlace.appendChild(botonPublicaciones);
+
+        nuevoTd.appendChild(enlace);
+        element.appendChild(nuevoTd4);
+    } else {
+        validador++;
+    }
 });
 console.log(tabla);
 
