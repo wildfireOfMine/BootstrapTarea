@@ -8,6 +8,10 @@
     height: 20px;
     color: transparent !important;
   }
+  .aviso {
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=listadoPublicaciones.css.map */
