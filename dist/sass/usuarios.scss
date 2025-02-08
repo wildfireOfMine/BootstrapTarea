@@ -1,0 +1,11 @@
+@media (max-width: 1182px) {
+    #cuerpoTabla {
+        tr{
+            td:nth-child(7){
+                button{
+                    margin: 5px 0 !important;
+                }
+            }
+        }
+    }
+}
