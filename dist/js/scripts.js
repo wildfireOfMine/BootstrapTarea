@@ -90,16 +90,12 @@ Array.from(tabla).forEach((element) => {
         validador++;
     }
 });
-console.log(tabla);
 
 const botonesBloquear = document.querySelectorAll(".btn-danger");
 const botonesDesbloquear = document.querySelectorAll(".btn-warning");
 const aviso = document.querySelector(".aviso");
 const confirmacionNegacion = document.querySelectorAll(".btn-secondary");
 const botonesBorrar = document.querySelectorAll(".borrar");
-console.log(botonesBorrar);
-console.log(aviso);
-console.log(botonesBloquear);
 
 Array.from(botonesBloquear).forEach(e => {
     e.addEventListener("click", bloquear);
