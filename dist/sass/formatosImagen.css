@@ -5,6 +5,7 @@
     flex-direction: column;
     align-self: center;
     align-items: center;
+    text-align: center;
   }
   #formatoImagenLista {
     font-size: 0.5em;
@@ -15,4 +16,4 @@
   }
 }
 
-/*# sourceMappingURL=filtros.css.map */
+/*# sourceMappingURL=formatosImagen.css.map */
