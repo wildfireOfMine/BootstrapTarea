@@ -1,0 +1,15 @@
+@media (max-width:800px) {
+    #cabecera {
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    #listaFiltros{
+        font-size: 0.5em;
+    }
+}
