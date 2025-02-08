@@ -3,13 +3,16 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  .table tbody tr td:nth-child(4) {
+  table tbody tr td {
+    margin: 5px 0;
+  }
+  table tbody tr td:nth-child(4) {
     display: flex !important;
     flex-direction: column !important;
   }
-  .table tbody tr td:nth-child(4) button {
-    width: 20px;
-    height: 20px;
+  table tbody tr td:nth-child(4) button {
+    width: 20px !important;
+    height: 20px !important;
     color: transparent !important;
   }
   .aviso {
@@ -17,7 +20,7 @@
     width: 100%;
   }
   .card-body {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   footer {
     font-size: 0.8em;
