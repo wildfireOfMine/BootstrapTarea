@@ -37,6 +37,7 @@ toggleButton.addEventListener("click", e=>{
 /* Añadir nuevos botones a las tablas */
 let validador = 0;
 const tabla = document.querySelectorAll("#cuerpoTabla > tr");
+
 Array.from(tabla).forEach((element) => {
     if (validador != 0) {
         /* Botón de Bloqueo */
