@@ -13,7 +13,10 @@
     width: 100vw;
   }
   .card-body {
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+  footer {
+    font-size: 0.8em;
   }
 }
 
