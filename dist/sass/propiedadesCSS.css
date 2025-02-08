@@ -1,0 +1,17 @@
+@media (max-width: 650px) {
+  #cabecera ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+  #propiedadesCSS {
+    font-size: 0.7em;
+  }
+  .list-group .list-group-item {
+    font-size: 1.3em !important;
+  }
+}
+
+/*# sourceMappingURL=propiedadesCSS.css.map */
