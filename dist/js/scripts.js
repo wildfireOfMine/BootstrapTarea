@@ -114,7 +114,6 @@ Array.from(botonesBorrar).forEach(e => {
 });
 
 function bloquear(e){
-    console.log(e);
     e.preventDefault();
     aviso.classList.toggle("avisoActivado");
 }
